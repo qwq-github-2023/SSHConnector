@@ -13,11 +13,11 @@
 由 qwq(https://space.bilibili.com/414876797)) 编写
 ## 用法
 ### 命令行启动
-**用"()"括号的参数意为必要参数，用"\[\]"括号的参数意为可选参数**
-SSHConnector (SSH目标IP地址) (SSH目标端口) (SSH目标用户名) (SSH目标密码) \[代理类型，可填写SOCKS4/SOCKS5\] \[代理服务器IP地址\] \[代理服务器端口\] \[代理服务器用户名\] \[代理服务器密码\]
-例子:
-*SSHConnector 0.0.0.0 22 root mypassword*
-*SSHConnector 0.0.0.0 22 root mypassword SOCKS5 0.0.0.0 1234*
-*SSHConnector 0.0.0.0 22 root mypassword SOCKS5 0.0.0.0 1234 qwq proxypassword*
+**用"\(\)"括号的参数意为必要参数，用"\[\]"括号的参数意为可选参数**<br>
+SSHConnector (SSH目标IP地址) (SSH目标端口) (SSH目标用户名) (SSH目标密码) \[代理类型，可填写SOCKS4/SOCKS5\] \[代理服务器IP地址\] \[代理服务器端口\] \[代理服务器用户名\] \[代理服务器密码\]<br>
+例子:<br>
+*SSHConnector 0.0.0.0 22 root mypassword*<br>
+*SSHConnector 0.0.0.0 22 root mypassword SOCKS5 0.0.0.0 1234*<br>
+*SSHConnector 0.0.0.0 22 root mypassword SOCKS5 0.0.0.0 1234 qwq proxypassword*<br>
 ### 直接启动
 直接启动exe，跟随提示输入信息即可
