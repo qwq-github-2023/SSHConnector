@@ -58,10 +58,10 @@ int main(int argc, char* argv[16])
     cout << "SSHConnector 遵循 GPL v3 开源协议" << endl;
     
     /* if (IsDebuggerPresent()) {
-        ipaddress = "142.171.205.91";
+        ipaddress = "";
         port = "22";
         username = "root";
-        password = "uy4PqvBM21";
+        password = "";
         proxytype = "SOCKS5";
         proxyipaddress = "127.0.0.1";
         proxyport = "7890";
