@@ -78,7 +78,7 @@ int main(int argc, char* argv[16])
             cin >> username;
             cout << "请输入您的服务器连接密码: ";
             cin >> password;
-            cout << "请输入您的代理服务器类型(SOCKS4/SOCKS5/无代理请回车): ";
+            cout << "请输入您的代理服务器类型(SOCKS4/SOCKS5/HTTP/无代理请回车): ";
             cin >> proxytype;
             if (proxytype != "") {
                 cout << "请输入您的代理服务器IP地址: ";
@@ -123,6 +123,9 @@ int main(int argc, char* argv[16])
         }
         else if (proxytype == "SOCKS5") {
             proxysocketconfig_add_proxy(proxy, PROXYSOCKET_TYPE_SOCKS5, proxyipaddress.c_str(), stoul(proxyport), havepw ? argv[8] : NULL, havepw ? argv[9] : NULL);
+        }
+        else if (proxytype == "HTTP") {
+            proxysocketconfig_add_proxy(proxy, PROXYSOCKET_TYPE_WEB_CONNECT, proxyipaddress.c_str(), stoul(proxyport), havepw ? argv[8] : NULL, havepw ? argv[9] : NULL);
         }
         else {
             cout << "proxysocketconfig: 未知的代理模式！" << endl;
