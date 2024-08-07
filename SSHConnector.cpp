@@ -78,7 +78,7 @@ int main(int argc, char* argv[16])
             cin >> username;
             cout << "请输入您的服务器连接密码: ";
             cin >> password;
-            cout << "请输入您的代理服务器类型(若您不需要代理，或者不知道这是什么，直接按下回车即可): ";
+            cout << "请输入您的代理服务器类型(SOCKS4/SOCKS5/无代理请回车): ";
             cin >> proxytype;
             if (proxytype != "") {
                 cout << "请输入您的代理服务器IP地址: ";
