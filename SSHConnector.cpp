@@ -21,7 +21,7 @@ void PauseExit() {
 }
 
 void Init() {
-    SetConsoleTitleA("SSHConnector 1.0");
+    SetConsoleTitleA("SSHConnector 1.0.1");
     WSADATA wsData;
     if (WSAStartup(MAKEWORD(2, 2), &wsData) != 0) {
         cout << "Socket: 套接字初始化失败！" << endl;
