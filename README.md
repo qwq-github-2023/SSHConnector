@@ -21,3 +21,5 @@ SSHConnector (SSH目标IP地址) (SSH目标端口) (SSH目标用户名) (SSH目�
 *SSHConnector 0.0.0.0 22 root mypassword SOCKS5 0.0.0.0 1234 qwq proxypassword*<br>
 ### 直接启动
 直接启动exe，跟随提示输入信息即可
+## 未来
+未来将会添加SFTP功能，有相关意见可在Issues反馈
